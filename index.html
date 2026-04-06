@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>대표님을 위한 AI 실전 코칭 — AIXLIFE 나민수</title>
+  <title>대표님을 위한 AI 실전 코칭 — AIXLIFE</title>
   <meta name="description" content="2주 AI 실전 코칭. 소수 정원 5명. 강남 오프라인 3회 세션. 대표님의 실제 업무를 AI 도구로 바꿔드립니다.">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="preload" as="style" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
@@ -213,7 +213,10 @@
       backdrop-filter: blur(20px) saturate(180%);
       -webkit-backdrop-filter: blur(20px) saturate(180%);
       border-bottom: 1px solid var(--border-dark);
+      display: flex;
+      align-items: center;   /* nav 자체에서 수직 중앙 정렬 */
     }
+    .nav .container { height: 100%; }  /* container가 nav 전체 높이 채워야 inner가 100% 작동 */
     .nav-inner {
       display: flex;
       align-items: center;
@@ -1030,7 +1033,7 @@
     <div class="container">
       <div class="nav-inner">
         <a href="#" class="nav-logo">
-          <span>AIXLIFE</span> 나민수
+          <span>AIXLIFE</span>
         </a>
         <div class="nav-links">
           <a href="#who">이런 분께</a>
@@ -1551,7 +1554,7 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          <div class="footer-logo"><span>AIXLIFE</span> · 나민수</div>
+          <div class="footer-logo"><span>AIXLIFE</span></div>
           <div class="footer-copy">© 2026 AIXLIFE. All rights reserved.</div>
         </div>
         <div class="footer-contact">
