@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>대표님을 위한 AI 실전 코칭 — AIXLIFE</title>
-  <meta name="description" content="2주 AI 실전 코칭. 소수 정원 5명. 강남 오프라인 3회 세션. 대표님의 실제 업무를 AI 도구로 바꿔드립니다.">
+  <meta name="description" content="2주 AI 실전 코칭. 소수 정원 10명. 강남 오프라인 3회 세션. 대표님의 실제 업무를 AI 도구로 바꿔드립니다.">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="preload" as="style" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
@@ -40,6 +40,23 @@
 
       --max-w: 1100px;
       --nav-h: 56px;
+    }
+
+    /* ─── CUSTOM ICONS ──────────────────────────────────────────────── */
+    .custom-icon {
+      width: 32px;
+      height: 32px;
+      object-fit: contain;
+      vertical-align: middle;
+      display: inline-block;
+    }
+    .custom-icon-sm {
+      width: 16px;
+      height: 16px;
+      object-fit: contain;
+      vertical-align: middle;
+      display: inline-block;
+      margin-right: 2px;
     }
 
     /* ─── RESET ──────────────────────────────────────────────────────── */
@@ -520,7 +537,7 @@
       gap: 10px;
     }
     .who-exclusion::before {
-      content: "⚠️";
+      content: "";
       flex-shrink: 0;
       font-size: 16px;
     }
@@ -846,7 +863,7 @@
       gap: 8px;
     }
     .form-box-title::before {
-      content: "📝";
+      content: "";
       font-size: 18px;
     }
     .form-questions { display: flex; flex-direction: column; gap: 12px; }
@@ -1010,7 +1027,7 @@
       align-items: center;
       gap: 8px;
     }
-    .footer-email::before { content: "✉"; font-size: 13px; }
+    .footer-email::before { content: ""; font-size: 13px; }
     .footer-tagline {
       font-size: 12px;
       color: var(--text-dark-dim);
@@ -1136,12 +1153,12 @@
         </div>
 
         <p class="hero-note fade-in fade-in-delay-4">
-          정원 5명 <span>·</span> 강남 오프라인 <span>·</span> AI 유료 구독 필수
+          정원 10명 <span>·</span> 강남 오프라인 <span>·</span> AI 유료 구독 필수
         </p>
 
         <div class="hero-stats fade-in fade-in-delay-4">
           <div class="stat-item">
-            <div class="stat-num">5<span class="unit">명</span></div>
+            <div class="stat-num">10<span class="unit">명</span></div>
             <div class="stat-label">소수 정원</div>
           </div>
           <div class="stat-item">
@@ -1172,15 +1189,15 @@
 
       <div class="pain-cards">
         <div class="pain-card fade-in fade-in-delay-1">
-          <div class="pain-icon">🤔</div>
+          <div class="pain-icon"><img src="assets/icons/icon_thinking.png" class="custom-icon" alt="icon"></div>
           <p class="pain-quote">ChatGPT는 쓰는데... 결국 채팅만 하다 끝나요. 업무가 바뀌질 않아요.</p>
         </div>
         <div class="pain-card fade-in fade-in-delay-2">
-          <div class="pain-icon">📋</div>
+          <div class="pain-icon"><img src="assets/icons/icon_clipboard.png" class="custom-icon" alt="icon"></div>
           <p class="pain-quote">매일 같은 일을 손으로 반복하고 있어요. 자동화하고 싶은데 어디서 시작해야 할지.</p>
         </div>
         <div class="pain-card fade-in fade-in-delay-3">
-          <div class="pain-icon">😔</div>
+          <div class="pain-icon"><img src="assets/icons/icon_sad.png" class="custom-icon" alt="icon"></div>
           <p class="pain-quote">AI 강의를 몇 개나 들었는데, 내 업무에 어떻게 적용해야 할지 모르겠어요.</p>
         </div>
       </div>
@@ -1263,17 +1280,17 @@
 
       <div class="who-cards">
         <div class="who-card fade-in fade-in-delay-1">
-          <div class="who-icon">🏢</div>
+          <div class="who-icon"><img src="assets/icons/icon_building.png" class="custom-icon" alt="icon"></div>
           <div class="who-type">제조·유통 대표님</div>
           <p class="who-desc">재고 현황, 발주 알림, 거래처 연락을 매일 손으로 하고 계신 분</p>
         </div>
         <div class="who-card fade-in fade-in-delay-2">
-          <div class="who-icon">📊</div>
+          <div class="who-icon"><img src="assets/icons/icon_chart.png" class="custom-icon" alt="icon"></div>
           <div class="who-type">서비스업 대표님</div>
           <p class="who-desc">계약서 검토, 견적 작성, 고객 응대 메일을 직접 타이핑하고 계신 분</p>
         </div>
         <div class="who-card fade-in fade-in-delay-3">
-          <div class="who-icon">🛒</div>
+          <div class="who-icon"><img src="assets/icons/icon_cart.png" class="custom-icon" alt="icon"></div>
           <div class="who-type">온라인 사업 대표님</div>
           <p class="who-desc">데이터 분석, 상품 등록, 리뷰 모니터링을 매일 새벽에 하시는 분</p>
         </div>
@@ -1296,17 +1313,17 @@
 
       <div class="built-cards">
         <div class="built-card fade-in fade-in-delay-1">
-          <div class="built-icon">🔄</div>
+          <div class="built-icon"><img src="assets/icons/icon_refresh.png" class="custom-icon" alt="icon"></div>
           <div class="built-title">입찰 공고 자동 수집기</div>
           <p class="built-desc">매일 100개 공고를 수동으로 확인하던 것을 AI가 자동으로 요약해서 슬랙으로 발송</p>
         </div>
         <div class="built-card fade-in fade-in-delay-2">
-          <div class="built-icon">📄</div>
+          <div class="built-icon"><img src="assets/icons/icon_document.png" class="custom-icon" alt="icon"></div>
           <div class="built-title">계약서 자동 검토 도구</div>
           <p class="built-desc">계약서를 업로드하면 핵심 조항과 리스크를 AI가 즉시 분석</p>
         </div>
         <div class="built-card fade-in fade-in-delay-3">
-          <div class="built-icon">📧</div>
+          <div class="built-icon"><img src="assets/icons/icon_email.png" class="custom-icon" alt="icon"></div>
           <div class="built-title">고객 응대 자동화</div>
           <p class="built-desc">문의 유형에 따라 AI가 초안을 자동 작성, 대표님은 확인만</p>
         </div>
@@ -1331,21 +1348,21 @@
       <!-- Quick Summary -->
       <div class="curriculum-intro fade-in">
         <div class="ci-item">
-          <div class="ci-icon">📍</div>
+          <div class="ci-icon"><img src="assets/icons/icon_pin.png" class="custom-icon" alt="icon"></div>
           <div>
             <div class="ci-label">강남 오프라인</div>
             <div class="ci-sub">Session 01 · 02 (각 2시간 30분)</div>
           </div>
         </div>
         <div class="ci-item">
-          <div class="ci-icon">💻</div>
+          <div class="ci-icon"><img src="assets/icons/icon_laptop.png" class="custom-icon" alt="icon"></div>
           <div>
             <div class="ci-label">온라인 화상</div>
             <div class="ci-sub">Session 03 (1시간, 소수 그룹)</div>
           </div>
         </div>
         <div class="ci-item">
-          <div class="ci-icon">🛠</div>
+          <div class="ci-icon"><img src="assets/icons/icon_wrench.png" class="custom-icon" alt="icon"></div>
           <div>
             <div class="ci-label">사용 도구</div>
             <div class="ci-sub">Claude · Antigravity · GitHub · 배포 플랫폼</div>
@@ -1361,7 +1378,7 @@
             <div class="session-left">
               <div class="session-num">Session 01</div>
               <div class="session-title">가능성을 확인하고, 첫 코드를 짜는 날</div>
-              <div class="session-time">⏱ 2시간 30분</div>
+              <div class="session-time"> 2시간 30분</div>
               <div class="session-week">1주차 · 오프라인</div>
             </div>
             <div class="session-right">
@@ -1378,9 +1395,9 @@
                 이 세션 끝에: 개발 방향이 확정되고 실제 작동하는 코드가 30% 이상 완성된 상태
               </div>
               <div class="session-tools">
-                <span class="tool-tag">🤖 Claude AI</span>
-                <span class="tool-tag">⌨️ Antigravity</span>
-                <span class="tool-tag">📁 GitHub</span>
+                <span class="tool-tag"><img src="assets/icons/icon_robot.png" class="custom-icon-sm" alt="icon"> Claude AI</span>
+                <span class="tool-tag"> Antigravity</span>
+                <span class="tool-tag"><img src="assets/icons/icon_folder.png" class="custom-icon-sm" alt="icon"> GitHub</span>
               </div>
             </div>
           </div>
@@ -1392,7 +1409,7 @@
             <div class="session-left">
               <div class="session-num">Session 02</div>
               <div class="session-title">완성하고 배포까지 — 도구가 실제로 살아납니다</div>
-              <div class="session-time">⏱ 2시간 30분</div>
+              <div class="session-time"> 2시간 30분</div>
               <div class="session-week">1주차 · 오프라인</div>
             </div>
             <div class="session-right">
@@ -1409,10 +1426,10 @@
                 이 세션 끝에: 실제 업무에 바로 쓸 수 있는 도구가 배포된 상태, 링크 공유 가능
               </div>
               <div class="session-tools">
-                <span class="tool-tag">🤖 Claude AI</span>
-                <span class="tool-tag">⌨️ Antigravity</span>
-                <span class="tool-tag">🚀 배포 플랫폼</span>
-                <span class="tool-tag">🗄️ Supabase</span>
+                <span class="tool-tag"><img src="assets/icons/icon_robot.png" class="custom-icon-sm" alt="icon"> Claude AI</span>
+                <span class="tool-tag"> Antigravity</span>
+                <span class="tool-tag"><img src="assets/icons/icon_rocket.png" class="custom-icon-sm" alt="icon"> 배포 플랫폼</span>
+                <span class="tool-tag"> Supabase</span>
               </div>
             </div>
           </div>
@@ -1424,7 +1441,7 @@
             <div class="session-left">
               <div class="session-num">Session 03</div>
               <div class="session-title">공유하고, 다음 도구를 설계합니다</div>
-              <div class="session-time">⏱ 1시간</div>
+              <div class="session-time"> 1시간</div>
               <div class="session-week">2주차 · 온라인</div>
             </div>
             <div class="session-right">
@@ -1440,9 +1457,9 @@
                 이 세션 끝에: 다음 도구를 혼자 기획·구현할 수 있는 판단력과 로드맵이 생김
               </div>
               <div class="session-tools">
-                <span class="tool-tag">👥 그룹 리뷰</span>
-                <span class="tool-tag">🗺️ 로드맵 설계</span>
-                <span class="tool-tag">🔄 자립 구조</span>
+                <span class="tool-tag"> 그룹 리뷰</span>
+                <span class="tool-tag"> 로드맵 설계</span>
+                <span class="tool-tag"><img src="assets/icons/icon_refresh.png" class="custom-icon-sm" alt="icon"> 자립 구조</span>
               </div>
             </div>
           </div>
@@ -1488,21 +1505,21 @@
 
         <div class="why-promises fade-in fade-in-delay-2">
           <div class="promise-card">
-            <div class="promise-icon">🎯</div>
+            <div class="promise-icon"><img src="assets/icons/icon_target.png" class="custom-icon" alt="icon"></div>
             <div class="promise-body">
               <div class="promise-title">대표님 업무에 맞춘 맞춤형 설계</div>
               <p class="promise-desc">신청서로 사전 분석 후 세션 전 준비. 범용 커리큘럼이 아닌 대표님 고유의 업무를 기준으로 설계합니다.</p>
             </div>
           </div>
           <div class="promise-card">
-            <div class="promise-icon">🛠</div>
+            <div class="promise-icon"><img src="assets/icons/icon_wrench.png" class="custom-icon" alt="icon"></div>
             <div class="promise-body">
               <div class="promise-title">막히는 부분은 즉시 해결</div>
               <p class="promise-desc">세션 중 실시간 멘토링, 에러 즉시 해결. 혼자 검색하며 시간 낭비할 필요가 없습니다.</p>
             </div>
           </div>
           <div class="promise-card">
-            <div class="promise-icon">🔄</div>
+            <div class="promise-icon"><img src="assets/icons/icon_refresh.png" class="custom-icon" alt="icon"></div>
             <div class="promise-body">
               <div class="promise-title">도구 하나로 끝나지 않습니다</div>
               <p class="promise-desc">다음 도구도 스스로 만들 수 있는 구조를 전달합니다. 의존이 아닌 자립을 목표로 합니다.</p>
@@ -1549,7 +1566,7 @@
             <div class="step-num">04</div>
             <div class="step-body">
               <div class="step-title">참가 확정</div>
-              <p class="step-desc">정원 5명 확정 후 첫 세션 날짜가 안내됩니다. 강남 오프라인 세션으로 진행됩니다.</p>
+              <p class="step-desc">정원 10명 확정 후 첫 세션 날짜가 안내됩니다. 강남 오프라인 세션으로 진행됩니다.</p>
             </div>
           </div>
         </div>
@@ -1629,7 +1646,7 @@
           </button>
           <div class="faq-a">
             <div class="faq-a-inner">
-              소수 그룹(최대 5명)으로 진행됩니다. 각 세션에서 개인 업무에 맞춰 1:1 멘토링이 함께 이루어집니다. 소수이기 때문에 각 대표님의 업무에 충분히 집중할 수 있습니다.
+              소수 그룹(최대 10명)으로 진행됩니다. 각 세션에서 개인 업무에 맞춰 1:1 멘토링이 함께 이루어집니다. 소수이기 때문에 각 대표님의 업무에 충분히 집중할 수 있습니다.
             </div>
           </div>
         </div>
@@ -1642,7 +1659,7 @@
   <section class="urgency">
     <div class="container">
       <div class="urgency-inner fade-in">
-        <h2>1기 모집은 5명으로 마감됩니다</h2>
+        <h2>1기 모집은 10명으로 마감됩니다</h2>
         <div class="urgency-tags">
           <span class="urgency-tag">선착순 확정</span>
           <span class="urgency-tag">강남 오프라인</span>
