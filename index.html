@@ -661,6 +661,57 @@
       line-height: 1.5;
     }
     .session-output::before { content: "→"; font-size: 13px; margin-top: 1px; }
+    .session-tools {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-light);
+    }
+    .tool-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 12px;
+      border-radius: var(--radius-pill);
+      font-size: 12px;
+      font-weight: 600;
+      background: var(--bg-page);
+      border: 1px solid var(--border-light);
+      color: var(--text-light-p);
+    }
+    .session-note {
+      font-size: 13px;
+      color: var(--text-light-p);
+      line-height: 1.6;
+      margin-bottom: 16px;
+      padding: 10px 14px;
+      background: rgba(59,130,246,0.04);
+      border-left: 3px solid var(--accent-blue);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    }
+    .curriculum-intro {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .ci-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 20px;
+      background: var(--bg-light);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+    }
+    .ci-icon { font-size: 22px; flex-shrink: 0; }
+    .ci-label { font-size: 13px; font-weight: 600; color: var(--text-light-h); }
+    .ci-sub { font-size: 12px; color: var(--text-light-p); margin-top: 2px; }
+    @media (max-width: 768px) {
+      .curriculum-intro { grid-template-columns: 1fr; }
+    }
 
     /* ─── WHY MINSOO ─────────────────────────────────────────────────── */
     .why { padding: 100px 0; background: var(--bg-dark); }
@@ -1277,67 +1328,121 @@
         <p class="subtext light">신청서를 통해 대표님의 업무를 미리 분석하고, 세션마다 실제 도구를 함께 만듭니다.</p>
       </div>
 
+      <!-- Quick Summary -->
+      <div class="curriculum-intro fade-in">
+        <div class="ci-item">
+          <div class="ci-icon">📍</div>
+          <div>
+            <div class="ci-label">강남 오프라인</div>
+            <div class="ci-sub">Session 01 · 02 (각 2시간 30분)</div>
+          </div>
+        </div>
+        <div class="ci-item">
+          <div class="ci-icon">💻</div>
+          <div>
+            <div class="ci-label">온라인 화상</div>
+            <div class="ci-sub">Session 03 (1시간, 소수 그룹)</div>
+          </div>
+        </div>
+        <div class="ci-item">
+          <div class="ci-icon">🛠</div>
+          <div>
+            <div class="ci-label">사용 도구</div>
+            <div class="ci-sub">Claude · Cursor · GitHub · 배포 플랫폼</div>
+          </div>
+        </div>
+      </div>
+
       <div class="curriculum-sessions">
 
+        <!-- Session 01 -->
         <div class="session-card fade-in fade-in-delay-1">
           <div class="session-inner">
             <div class="session-left">
               <div class="session-num">Session 01</div>
-              <div class="session-title">가능성을 확인하는 시간</div>
+              <div class="session-title">가능성을 확인하고, 첫 코드를 짜는 날</div>
               <div class="session-time">⏱ 2시간 30분</div>
-              <div class="session-week">1주차</div>
+              <div class="session-week">1주차 · 오프라인</div>
             </div>
             <div class="session-right">
+              <div class="session-note">세션 전에 신청서를 바탕으로 대표님 업무를 미리 분석합니다. 당일 낭비 없이 바로 시작합니다.</div>
               <div class="session-items">
-                <div class="session-item">완성 결과물 시연</div>
-                <div class="session-item">대표님 업무 분석 &amp; 핵심 도구 결정</div>
-                <div class="session-item">Claude와 대화하며 즉석 기획 작성</div>
-                <div class="session-item">개발·AI 환경 세팅</div>
+                <div class="session-item">실제 완성 결과물 시연 — "이런 것도 가능하다"를 직접 눈으로 확인</div>
+                <div class="session-item">대표님 업무 흐름 분석 &amp; 자동화 포인트 도출</div>
+                <div class="session-item">Claude와 대화하며 즉석 기획서 작성 (코딩 지식 불필요)</div>
+                <div class="session-item">Cursor + Claude 개발 환경 세팅 및 첫 코드 작성</div>
+                <div class="session-item">AI에게 제대로 요청하는 법 실습 — 프롬프트 설계 원칙</div>
+                <div class="session-item">핵심 기능 30% 이상 완성 후 마무리</div>
               </div>
               <div class="session-output">
-                이 세션 끝에: 개발 방향이 잡히고 30% 이상 만들어진 상태
+                이 세션 끝에: 개발 방향이 확정되고 실제 작동하는 코드가 30% 이상 완성된 상태
+              </div>
+              <div class="session-tools">
+                <span class="tool-tag">🤖 Claude AI</span>
+                <span class="tool-tag">⌨️ Cursor</span>
+                <span class="tool-tag">📁 GitHub</span>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- Session 02 -->
         <div class="session-card fade-in fade-in-delay-2">
           <div class="session-inner">
             <div class="session-left">
               <div class="session-num">Session 02</div>
-              <div class="session-title">만들고 배포까지 완결</div>
+              <div class="session-title">완성하고 배포까지 — 도구가 실제로 살아납니다</div>
               <div class="session-time">⏱ 2시간 30분</div>
-              <div class="session-week">1주차</div>
+              <div class="session-week">1주차 · 오프라인</div>
             </div>
             <div class="session-right">
+              <div class="session-note">Session 01에서 막혔거나 더 구현하고 싶었던 부분을 먼저 해결합니다.</div>
               <div class="session-items">
-                <div class="session-item">진행 상황 공유 및 막힌 부분 즉시 해결</div>
-                <div class="session-item">핵심 기능 집중 구현</div>
-                <div class="session-item">실 배포 및 링크 생성</div>
+                <div class="session-item">지난 세션 이후 막힌 부분 즉시 해결 — 혼자 검색할 필요 없음</div>
+                <div class="session-item">핵심 기능 집중 구현 (AI 코딩 실전 — 에러 나도 같이 해결)</div>
+                <div class="session-item">에러 발생 시 디버깅 방법 직접 체득 — 앞으로 혼자 고칠 수 있게</div>
+                <div class="session-item">실서비스 배포 및 공유 링크 생성</div>
+                <div class="session-item">팀원·거래처도 바로 쓸 수 있는 형태로 완성</div>
+                <div class="session-item">도구 사용 방법 정리 — 내일부터 바로 업무에 투입</div>
               </div>
               <div class="session-output">
-                이 세션 끝에: 실제 업무에 바로 쓸 수 있는 도구 완성
+                이 세션 끝에: 실제 업무에 바로 쓸 수 있는 도구가 배포된 상태, 링크 공유 가능
+              </div>
+              <div class="session-tools">
+                <span class="tool-tag">🤖 Claude AI</span>
+                <span class="tool-tag">⌨️ Cursor</span>
+                <span class="tool-tag">🚀 배포 플랫폼</span>
+                <span class="tool-tag">🗄️ Supabase</span>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- Session 03 -->
         <div class="session-card fade-in fade-in-delay-3">
           <div class="session-inner">
             <div class="session-left">
               <div class="session-num">Session 03</div>
-              <div class="session-title">공유 및 다음 도구 구상</div>
+              <div class="session-title">공유하고, 다음 도구를 설계합니다</div>
               <div class="session-time">⏱ 1시간</div>
-              <div class="session-week">2주차</div>
+              <div class="session-week">2주차 · 온라인</div>
             </div>
             <div class="session-right">
+              <div class="session-note">소수 그룹이 함께 모여 각자의 결과물을 공유합니다. 다른 대표님 도구에서 더 많이 배웁니다.</div>
               <div class="session-items">
-                <div class="session-item">5분 시연 — 직접 만든 도구 보여주기</div>
-                <div class="session-item">인사이트 공유</div>
-                <div class="session-item">다음 자동화할 과업 1가지 구상</div>
+                <div class="session-item">5분 시연 — 직접 만든 도구 실제 동작 발표</div>
+                <div class="session-item">1주일 사용 후기 공유 — 어떤 업무가 바뀌었는지 확인</div>
+                <div class="session-item">다른 참가자 도구에서 응용 아이디어 발견</div>
+                <div class="session-item">다음 자동화할 과업 1가지 선정 및 방향 설계</div>
+                <div class="session-item">혼자 이어나갈 수 있는 개인 로드맵 정리</div>
               </div>
               <div class="session-output">
-                이 세션 끝에: 혼자서도 다음 도구를 만들 수 있는 구조가 생김
+                이 세션 끝에: 다음 도구를 혼자 기획·구현할 수 있는 판단력과 로드맵이 생김
+              </div>
+              <div class="session-tools">
+                <span class="tool-tag">👥 그룹 리뷰</span>
+                <span class="tool-tag">🗺️ 로드맵 설계</span>
+                <span class="tool-tag">🔄 자립 구조</span>
               </div>
             </div>
           </div>
